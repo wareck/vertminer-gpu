@@ -2711,7 +2711,8 @@ unsigned char vert_GetNfactor(const long int nTimestamp) {
     }
 
     s &= 3;
-    n = (l * 158 + s * 28 - 2670) / 100;
+    //n = (l * 158 + s * 28 - 2670) / 100; // removed for fujicoin mining
+    n= 0; //added for fujicoin mining
 
     if (n < 0) 
       n = 0;
